@@ -1,7 +1,7 @@
 # Voxel-Engine
  A basic voxel engine made with C++17 and OpenGL 4.6.
 
- ![Game of Life](build/screenshots/screenshot_15826877922924566.png)
+ ![Voxel Engine](build/screenshots/screenshot_15826877922924566.png)
 
 ## Controls
  **W**/**A**/**S**/**D**/**Controller d-pad**/**Controller left axis** - move.
