@@ -1,0 +1,8 @@
+﻿  World.cpp
+     Creating library K:\Matt Schafer\Documents\repos\VoxelEngine\bin\x64\Release\VoxelEngine.lib and object K:\Matt Schafer\Documents\repos\VoxelEngine\bin\x64\Release\VoxelEngine.exp
+  Generating code
+  2 of 3823 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    14 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  VoxelEngine.vcxproj -> K:\Matt Schafer\Documents\repos\VoxelEngine\bin\x64\Release\VoxelEngine.exe

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{C96DCDE6-320F-4408-A658-63CF621F6D9D}</ProjectGuid>
+    <RootNamespace>VoxelEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\int\</IntDir>
+    <IncludePath>$(SolutionDir)dep\SDL2-2.0.10\include\;$(SolutionDir)dep\glad-0.1.33\include\;$(SolutionDir)dep\freetype-2.10.0\include\;$(SolutionDir)dep\glm-0.9.9\include\;$(SolutionDir)dep\magic_enum-0.6.4\include\;$(SolutionDir)dep\openal-soft-1.20.1\include\;$(SolutionDir)dep\stb_image-2.23\include\;$(SolutionDir)dep\tinyxml2-7.1.0\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)dep\SDL2-2.0.10\lib;$(SolutionDir)dep\freetype-2.10.0\lib;$(SolutionDir)dep\openal-soft-1.20.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\int\</IntDir>
+    <IncludePath>$(SolutionDir)dep\SDL2-2.0.10\include\;$(SolutionDir)dep\glad-0.1.33\include\;$(SolutionDir)dep\freetype-2.10.0\include\;$(SolutionDir)dep\glm-0.9.9\include\;$(SolutionDir)dep\magic_enum-0.6.4\include\;$(SolutionDir)dep\openal-soft-1.20.1\include\;$(SolutionDir)dep\stb_image-2.23\include\;$(SolutionDir)dep\tinyxml2-7.1.0\include\;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)dep\SDL2-2.0.10\lib;$(SolutionDir)dep\freetype-2.10.0\lib;$(SolutionDir)dep\openal-soft-1.20.1\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;freetype.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <DisableSpecificWarnings>%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;opengl32.lib;freetype.lib;OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\engine\audio\AudioContext.cpp" />
+    <ClCompile Include="src\engine\audio\AudioSource.cpp" />
+    <ClCompile Include="src\engine\audio\Sound.cpp" />
+    <ClCompile Include="src\engine\camera\Camera3D.cpp" />
+    <ClCompile Include="src\engine\error\GameException.cpp" />
+    <ClCompile Include="src\engine\Game.cpp" />
+    <ClCompile Include="src\engine\graphics\Cubemap.cpp" />
+    <ClCompile Include="src\engine\graphics\Drawable.cpp" />
+    <ClCompile Include="src\engine\graphics\shaders\Shader.cpp" />
+    <ClCompile Include="src\engine\graphics\shaders\ShaderProgram.cpp" />
+    <ClCompile Include="src\engine\graphics\Sprite.cpp" />
+    <ClCompile Include="src\engine\graphics\Texture.cpp" />
+    <ClCompile Include="src\engine\graphics\TextureArray.cpp" />
+    <ClCompile Include="src\engine\graphics\text\Font.cpp" />
+    <ClCompile Include="src\engine\graphics\text\Text.cpp" />
+    <ClCompile Include="src\engine\graphics\TileMap.cpp" />
+    <ClCompile Include="src\engine\graphics\window\GLWindow.cpp" />
+    <ClCompile Include="src\engine\graphics\window\Window.cpp" />
+    <ClCompile Include="src\engine\input\GameController.cpp" />
+    <ClCompile Include="src\engine\managers\assets\CubemapManager.cpp" />
+    <ClCompile Include="src\engine\managers\assets\FontManager.cpp" />
+    <ClCompile Include="src\engine\managers\assets\TextureArrayManager.cpp" />
+    <ClCompile Include="src\engine\managers\input\InputManager.cpp" />
+    <ClCompile Include="src\engine\managers\assets\ShaderManager.cpp" />
+    <ClCompile Include="src\engine\managers\assets\SoundManager.cpp" />
+    <ClCompile Include="src\engine\managers\assets\TextureManager.cpp" />
+    <ClCompile Include="src\engine\scenes\GameScene.cpp" />
+    <ClCompile Include="src\engine\utility\config\ConfigReader.cpp" />
+    <ClCompile Include="src\engine\utility\Logger.cpp" />
+    <ClCompile Include="src\engine\utility\StringUtility.cpp" />
+    <ClCompile Include="src\engine\vendor\glad\glad.c" />
+    <ClCompile Include="src\engine\vendor\stbimage\STBImageImplementation.cpp" />
+    <ClCompile Include="src\engine\vendor\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\voxel_engine\Skybox.cpp" />
+    <ClCompile Include="src\voxel_engine\world\Block.cpp" />
+    <ClCompile Include="src\voxel_engine\world\Chunk.cpp" />
+    <ClCompile Include="src\voxel_engine\VoxelEngine.cpp" />
+    <ClCompile Include="src\voxel_engine\world\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\engine\audio\AudioContext.h" />
+    <ClInclude Include="src\engine\audio\AudioSource.h" />
+    <ClInclude Include="src\engine\audio\Sound.h" />
+    <ClInclude Include="src\engine\camera\Camera3D.h" />
+    <ClInclude Include="src\engine\error\GameException.h" />
+    <ClInclude Include="src\engine\Game.h" />
+    <ClInclude Include="src\engine\graphics\Cubemap.h" />
+    <ClInclude Include="src\engine\graphics\Drawable.h" />
+    <ClInclude Include="src\engine\graphics\shaders\Shader.h" />
+    <ClInclude Include="src\engine\graphics\shaders\ShaderProgram.h" />
+    <ClInclude Include="src\engine\graphics\Sprite.h" />
+    <ClInclude Include="src\engine\graphics\Texture.h" />
+    <ClInclude Include="src\engine\graphics\TextureArray.h" />
+    <ClInclude Include="src\engine\graphics\text\Font.h" />
+    <ClInclude Include="src\engine\graphics\text\Text.h" />
+    <ClInclude Include="src\engine\graphics\TileMap.h" />
+    <ClInclude Include="src\engine\graphics\Vertex.h" />
+    <ClInclude Include="src\engine\graphics\window\GLWindow.h" />
+    <ClInclude Include="src\engine\graphics\window\Window.h" />
+    <ClInclude Include="src\engine\input\GameController.h" />
+    <ClInclude Include="src\engine\interfaces\IGameObject.h" />
+    <ClInclude Include="src\engine\interfaces\INoncopyable.h" />
+    <ClInclude Include="src\engine\interfaces\INonmovable.h" />
+    <ClInclude Include="src\engine\managers\assets\AssetManager.h" />
+    <ClInclude Include="src\engine\managers\assets\CubemapManager.h" />
+    <ClInclude Include="src\engine\managers\assets\FontManager.h" />
+    <ClInclude Include="src\engine\input\Input.h" />
+    <ClInclude Include="src\engine\managers\assets\TextureArrayManager.h" />
+    <ClInclude Include="src\engine\managers\input\InputManager.h" />
+    <ClInclude Include="src\engine\managers\assets\ShaderManager.h" />
+    <ClInclude Include="src\engine\managers\assets\SoundManager.h" />
+    <ClInclude Include="src\engine\managers\assets\TextureManager.h" />
+    <ClInclude Include="src\engine\scenes\GameScene.h" />
+    <ClInclude Include="src\engine\utility\config\Config.h" />
+    <ClInclude Include="src\engine\utility\config\ConfigReader.h" />
+    <ClInclude Include="src\engine\utility\Logger.h" />
+    <ClInclude Include="src\engine\utility\Random.h" />
+    <ClInclude Include="src\engine\utility\StringUtility.h" />
+    <ClInclude Include="src\voxel_engine\Skybox.h" />
+    <ClInclude Include="src\voxel_engine\world\Block.h" />
+    <ClInclude Include="src\voxel_engine\world\Chunk.h" />
+    <ClInclude Include="src\voxel_engine\VoxelEngine.h" />
+    <ClInclude Include="src\voxel_engine\world\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\chunk.frag" />
+    <None Include="shaders\chunk.vert" />
+    <None Include="shaders\skybox.frag" />
+    <None Include="shaders\skybox.vert" />
+    <None Include="shaders\sprite.frag" />
+    <None Include="shaders\sprite.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <title>Voxel Engine</title>
+  <window-width>1920</window-width>
+  <window-height>1080</window-height>
+  <gl-version-major>4</gl-version-major>
+  <gl-version-minor>6</gl-version-minor>
+  <enable-vsync>true</enable-vsync>
+  <multisample-count>8</multisample-count>
+</config>
